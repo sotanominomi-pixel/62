@@ -1,0 +1,161 @@
+/* Reset & basic */
+body {
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+header .tab {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+header .tab.active {
+  background: #000;
+  color: #fff;
+}
+
+/* Display */
+#display {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Slider box */
+#sliderBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+#sliderBox input[type="range"] {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 6px;
+  background: #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+#sliderBox input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#sliderBox input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Stopwatch buttons */
+.stopwatch-buttons button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.stopwatch-buttons button:hover {
+  background: #333;
+}
+
+/* Lap list */
+#lapList {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+/* Alarm cards */
+.alarm-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+/* iPhone-style toggle */
+.toggle {
+  width: 50px;
+  height: 28px;
+  background: #ccc;
+  border-radius: 14px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle.on {
+  background: #4cd964;
+}
+
+.toggle .thumb {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s;
+}
+
+.toggle.on .thumb {
+  left: 24px;
+}
+
+/* Alarm delete button */
+.del-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Settings */
+.settings-item {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
